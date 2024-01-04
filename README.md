@@ -2,7 +2,7 @@
 - NOM : CHOULET
 - PRÉNOM : ADRIEN
 - URL du site : 
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/PD7DUEa9RLrZZWBLNdlgHZ/Maquette-projet-individuel-adrien-choulet?type=design&t=nYdI6kSZCItTSw4G-6
 
 # Structure de départ pour le projet individuel.
 
