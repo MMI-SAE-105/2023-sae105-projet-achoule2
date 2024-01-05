@@ -1,54 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/pages/style.css">
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu-site">
-                <p class="menu-site-p">Insaisissable le film</p>
-            </div>
-    </header>
-
-
-    <main>
-        <img class="img__article" src="/public/img/image 1.png" alt="image afiche film">
-        <p>Insaisissables est un film de thriller et de magie réalisé par Louis Leterrier et sorti en 2013. Il met en scène quatre illusionnistes talentueux qui utilisent leurs tours pour réaliser des braquages spectaculaires, tout en étant poursuivis par le FBI et Interpol.</p>
-    </main>
-
-
-    <footer>
-        <div class="menu-social">
-            <p>Adrien CHOULET
-                Groupe C2
-                adrien.choulet24@gmail.com
-                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-        
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icom">
-            </a>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="div">
+        <header class="header">
+          <p class="insaisissable-le">
+            <span class="text-wrapper">Insaisissable le film</span> <span class="span">&nbsp;</span>
+          </p>
+          <img
+            class="hamburger-menu"
+            src="img/property-1-menu-button-property-2-hamburger-menu-property-3-closed.svg"
+          />
+        </header>
+        <div class="overlap">
+          <img class="line" src="img/line-1.svg" />
+          <img class="line" src="img/line-3.svg" />
+          <img class="line" src="img/line-4.png" />
+          <img class="icon-united-kingdom" src="img/icon-united-kingdom.png" />
+          <div class="rectangle"></div>
+          <div class="ellipse"></div>
         </div>
-    
-
-    </footer>
-
-</body>
+        <div class="overlap-group">
+          <img class="img" src="img/line-2.svg" />
+          <img class="image" src="img/image-1.png" />
+          <p class="p">
+            Insaisissables est un film de thriller et de magie réalisé par Louis Leterrier et sorti en 2013. Il met en
+            scène quatre illusionnistes talentueux qui utilisent leurs tours pour réaliser des braquages spectaculaires,
+            tout en étant poursuivis par le FBI et Interpol.
+          </p>
+          <footer class="footer">
+            <div class="overlap-group-2">
+              <a href="http://mmimontbeliard.com" target="_blank" rel="noopener noreferrer"
+                ><img class="MMI-dut-white-png" src="img/MMI-dut-white-png-1.png"
+              /></a>
+              <a href="https://www.linkedin.com/in/julienfleurent/" target="_blank" rel="noopener noreferrer"
+                ><img class="linkedin" src="img/icons8-linkedin-100-1.png"
+              /></a>
+              <a
+                href="https://www.youtube.com/channel/UCpifXy5gpG2nxZTlZ-F6Tig"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img class="lecture-de" src="img/icons8-lecture-de-youtube-100-1-1.png"
+              /></a>
+              <a href="https://www.instagram.com/j.ulien.f/" target="_blank" rel="noopener noreferrer"
+                ><img class="instagram" src="img/icons8-instagram-90-1.png"
+              /></a>
+              <p class="text-wrapper-2">
+                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard
+              </p>
+              <div class="flexcontainer">
+                <p class="text-i">
+                  <span class="text-wrapper-3">Adrien CHOULET<br /></span>
+                </p>
+                <p class="text-i">
+                  <span class="text-wrapper-3">Groupe C2<br /></span>
+                </p>
+                <p class="text-i"><span class="text-wrapper-3">adrien.choulet24@gmail.com</span></p>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <p class="INSAISISSABLE">
+          <span class="text-wrapper-4">INSAISISSABLE</span> <span class="text-wrapper-5">&nbsp;</span>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
