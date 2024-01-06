@@ -5,7 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Bibliothèque Normalize */
-@import '/src/css/vendors/normalize.css';
+@import '/src/vendors/normalize.css';
 
 /* Variable CSS */
-@import '/src/css/utils/variables.css';
+@import '/src/utils/variables.css';
+
+/* Autre pages CSS */
+
+@import '/src/css/main.css';

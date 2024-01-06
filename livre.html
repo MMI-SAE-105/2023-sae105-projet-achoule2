@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
-    <title>Document</title>
+    <title>Insaisissable</title>
 </head>
 <body>
     <header>
+        <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
+                <img src="/public/img/magie 1.png" alt="logo site">
                 <p class="menu-site-p">Insaisissable le film</p>
             </div>
+            <hr class="menu-site-hr">
+            <ul>
+                <li><a class="menu__link" href="./laréplique.html">La réplique</a></li>
+                <li><a class="menu__link" href="./film.html">films</a></li>
+                <li><a class="menu__link" href="./livre.html">livre</a></li>
+                <li><a class="menu__link" href="./musique.html">musique</a></li>
+                <li><a class="menu__link" href="./réalisateur.html">réalisateur</a></li>
+                <li><a class="menu__link" href="./BAfilm.html">BA/film</a></li>
+                <li><a class="menu__link" href="./contact.html">contact</a></li>
+                <li><a class="menu__link" href="./apropos.html">a propos</a></li>
+                <li><a class="menu__link" href="./autres.html">autres</a></li>
+
+            </ul>
+            <hr class="menu-site-hr">
+        </nav>
     </header>
     <main>
         <h1>LE LIVRE !</h1>
