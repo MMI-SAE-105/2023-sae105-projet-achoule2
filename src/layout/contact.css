@@ -1,0 +1,36 @@
+/* Style du contenu principal */
+.contact {
+    background-color: var(--vert);
+    padding-bottom: 20px;
+}
+
+.form__spacing {
+    padding: 20px;
+  }
+  
+  .form__spacing {
+    margin-bottom: 10px;
+  }
+  
+  .form__label {
+    display: block;
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .bulle {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  
+  .send__button {
+    padding: 10px 20px;
+    background-color: var(--btn-background);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    font-family: 'Lexend', sans-serif;
+  }

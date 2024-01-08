@@ -7,11 +7,32 @@
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        h2 {
+            color: #00561D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
@@ -34,42 +55,37 @@
             <hr class="menu-site-hr">
         </nav>
     </header>
-    <main>
+    <main style="text-align: center;">
         <h1>L’incontournable réplique de ce film !</h1>
         <h2>“ Approchez-vous, plus vous croirez en voir et plus vous vous ferez avoir ! “</h2>
         <p>La réplique “ Approchez-vous, plus vous croirez en voir et plus vous vous ferez avoir ! “ est une phrase prononcée par le personnage de Daniel Atlas, interprété par Jesse Eisenberg, dans le film Insaisissables. </p>
-        <img class="menu__icon" src="/public/img/image 2.png" alt="image cartes">
+        <img class="menu__icon" src="/public/img/image 2.png" alt="image cartes" style="display: block; margin: 0 auto;">
         <p>Il s’agit de la phrase d’accroche du spectacle des Quatre Cavaliers, le groupe de magiciens voleurs dont il fait partie. La phrase exprime l’idée que la magie est un art de l’illusion, qui repose sur la capacité à tromper le regard et l’esprit du spectateur. Elle suggère également que les Quatre Cavaliers ont toujours une longueur d’avance sur leurs poursuivants, et qu’ils sont maîtres de leur destin.</p>
-        <img class="menu__icon" src="/public/img/image 3.png" alt="image cartes">
+        <img class="menu__icon" src="/public/img/image 3.png" alt="image cartes" style="display: block; margin: 0 auto;">
         <p>La réplique est devenue célèbre grâce au film, qui a connu un grand succès au cinéma. Elle a été reprise dans plusieurs médias, comme des bandes-annonces, des affiches, des articles ou des vidéos. Elle a aussi inspiré des parodies ou des détournements humoristiques. Par exemple, le BDS KEDGE Bordeaux 2022-2023 a utilisé la réplique pour faire la promotion de son premier teaser principal . La réplique est également devenue un symbole de la fascination pour la magie et l’illusionnisme, qui attire de nombreux spectateurs à travers le monde.</p>
-
-
-
     </main>
+    
     <footer>
-        <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
-        <div class="menu-social">
-            <p>Adrien CHOULET
-                Groupe C2
-                adrien.choulet24@gmail.com
-                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-        
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icom">
-            </a>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
         </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>Groupe C2</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
 
     </footer>
 

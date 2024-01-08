@@ -7,11 +7,74 @@
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        /* Style pour le formulaire de contact */
+        .contact {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        font-family: 'Lexend', sans-serif;
+        }
+
+        .form__spacing {
+        margin-bottom: 15px;
+        }
+
+        .form__label {
+        display: block;
+        font-weight: bold;
+        }
+
+        .bulle {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        textarea.bulle {
+        height: 120px;
+        }
+
+        .send__button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        .send__button:hover {
+        background-color: #45a049;
+        }
+
+
+        
+
+    </style>
+
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
@@ -34,73 +97,60 @@
             <hr class="menu-site-hr">
         </nav>
     </header>
-    <main>
-        <h1>Formulaire de contact</h1>
+    <main class="contact">
         <div>
-            <div class="form__spacing">
-                <label class="form__label" for="name">Nom (obligatoire)</label>
-                <form>
-                    <input class="bulle" type="text" id="name" name="name"> 
-                </form>
-            </div>
-
-            <div class="form__spacing">
-                <label class="form__label" for="forname">Prénom (obligatoire)</label>
-                <form>
-                    <input class="bulle" type="text" id="forname" name="forname"> 
-                </form>
-            </div>
+            <form id="contactForm">
+                <div class="form__spacing">
+                    <label class="form__label" for="name">Nom (obligatoire)</label>
+                    <input class="bulle" type="text" id="name" name="name" placeholder="Votre nom">
+                </div>
+    
+                <div class="form__spacing">
+                    <label class="form__label" for="forname">Prénom (obligatoire)</label>
+                    <input class="bulle" type="text" id="forname" name="forname" placeholder="Votre prénom">
+                </div>
+                
+                <div class="form__spacing">
+                    <label class="form__label" for="email">Email (Obligatoire)</label>
+                    <input class="bulle" type="email" id="email" name="email" placeholder="exemple@domaine.com">
+                </div>
             
-            <div class="form__spacing">
-                <label class="form__label" for="email">Email (Obligatoire)</label>
-            
-                <form>
-                    <input class="bulle" type="text" id="email" name="email">
-                </form>
-            </div>
-        
-            <div class="form__spacing">
-                <label class="form__label" for="sujet">Sujet (obligatoire)</label>
-                <form>
-                    <input class="bulle" type="text" id="sujet" name="sujet">
-                </form>
-            </div>
-            
-            <div class="form__spacing">
-                <label class="form__label" for="message">Message (obligatoire)</label>
-                <form>
-                    <input class="bulle" type="text" id="message" name="message">
-                </form>
-            </div>
-            
-            <input class="send__button" type="submit" value="Envoyer">
+                <div class="form__spacing">
+                    <label class="form__label" for="sujet">Sujet (obligatoire)</label>
+                    <input class="bulle" type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
+                </div>
+                
+                <div class="form__spacing">
+                    <label class="form__label" for="message">Message (obligatoire)</label>
+                    <textarea class="bulle" id="message" name="message" placeholder="Votre message"></textarea>
+                </div>
+                
+                <input class="send__button" type="submit" value="Envoyer">
+            </form>
         </div>
-
     </main>
+    
     <footer>
-        <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
-        <div class="menu-social">
-            <p>Adrien CHOULET
-                Groupe C2
-                adrien.choulet24@gmail.com
-                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-        
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icom">
-            </a>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
         </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>Groupe C2</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
 
     </footer>
 

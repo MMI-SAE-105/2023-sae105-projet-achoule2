@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+    </style>
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
@@ -29,45 +42,41 @@
                 <li><a class="menu__link" href="./contact.html">contact</a></li>
                 <li><a class="menu__link" href="./apropos.html">a propos</a></li>
                 <li><a class="menu__link" href="./autres.html">autres</a></li>
-
             </ul>
             <hr class="menu-site-hr">
         </nav>
     </header>
 
 
-    <main>
-        <img class="menu__icon" src="/public/img/Line 4.png" alt="Ligne bas footer">
-        <img class="img__article" src="/public/img/image 1.png" alt="image afiche film">
-        <p>Insaisissables est un film de thriller et de magie réalisé par Louis Leterrier et sorti en 2013. Il met en scène quatre illusionnistes talentueux qui utilisent leurs tours pour réaliser des braquages spectaculaires, tout en étant poursuivis par le FBI et Interpol.</p>
+    <main style="height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>INSAISISSABLE </h1>
+        <img class="img__article" src="/public/img/image 1.png" alt="image affiche film" style="margin-top: 20px;">
+        <p style="text-align: left; margin-bottom: 20px;">Insaisissables est un film de thriller et de magie réalisé par Louis Leterrier et sorti en 2013. Il met en scène quatre illusionnistes talentueux qui utilisent leurs tours pour réaliser des braquages spectaculaires, tout en étant poursuivis par le FBI et Interpol.</p>
+        
     </main>
-
+    
 
     <footer>
-        <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
-        <div class="menu-social">
-            <p>Adrien CHOULET
-                Groupe C2
-                adrien.choulet24@gmail.com
-                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-        
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icom">
-            </a>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
         </div>
-    
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>Groupe C2</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
 
     </footer>
 

@@ -7,11 +7,51 @@
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        
+        main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Lexend', sans-serif;
+        text-align: center;
+        }
+
+        h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        }
+
+        .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+ 
+
+        p {
+        margin-bottom: 8px;
+        font-size: 16px;
+        }
+
+
+    </style>
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
@@ -35,31 +75,39 @@
         </nav>
     </header>
     <main>
-
-    </main>
-    <footer>
-        <hr class="menu-site-hr">
-        <div class="menu-social">
-            <a href="#">
-                <img class="menu__icon" src="/public/img/tiktok.png" alt="tiktok icon">
-            </a>
-        
-            <a href="#">
-                <img class="menu__icon" src="/public/img/twitter.png" alt="twitter icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/instagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/facebook.png" alt="facebook icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white.png" alt="MMI Icom">
-            </a>
+        <h1>A propos</h1>
+        <div class="info">
+            <img class="menu__icon" src="/public/img/image 16.png" alt="image 16">
+            <p>CHOULET ADRIEN</p>
+            <p>Etudiant 1ère année MMI Montbéliard</p>
+            <p>0602097500</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>16 rue de la synagogue</p>
+            <p>25200 Montbéliard</p>
         </div>
+    </main>
+    
+    <footer>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>Groupe C2</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
 
     </footer>
 

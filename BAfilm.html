@@ -7,11 +7,126 @@
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #00561D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+        margin-bottom: 15px;
+        }
+
+        .menu__icon {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .centered-link {
+        text-align: center;
+        }
+
+        .carousel {
+  display: flex;
+  flex-direction: column;
+  width: 958px;
+  height: 380px;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 64px;
+  position: relative;
+}
+
+.carousel .slides-box {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.carousel .slides-navigation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.carousel .click-area {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.carousel .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.carousel .slide-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.carousel .dot-indictaor {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #7b61ff;
+  border-radius: 8px;
+}
+
+.carousel .div {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: var(--carouselgray);
+  border-radius: 6px;
+  opacity: 0.5;
+}
+
+
+      
+    </style>
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
-        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/hamburger menu.png" alt="icone menu">
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
@@ -39,35 +154,41 @@
             FILMS</h1>
         <p>La bande annonce du film </p>
         <img class="menu__icon" src="/public/img/Video cover dXB0PokZ2Y0.png" alt="youtube Video">
-        <source src="https://www.youtube.com/watch?v=dXB0PokZ2Y0"
+        <div class="centered-link">
+            <a href="https://www.youtube.com/watch?v=dXB0PokZ2Y0">Vidéo bande annonce du film Insaisissable</a>
+        </div>
+
+  
+
+
+    
+        
+
 
 
     </main>
     <footer>
-        <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        </div>
         <div class="menu-social">
-            <p>Adrien CHOULET
-                Groupe C2
-                adrien.choulet24@gmail.com
-                Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+            <p>Adrien CHOULET</p>
+            <p>Groupe C2</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p> 
         
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon">
-            </a>
-    
-            <a href="#">
-                <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon">
-            </a>
-
-            <a href="http://mmimontbeliard.com/">
-                <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icom">
-            </a>
+         
         </div>
 
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
+        
 
     </footer>
 
