@@ -19,32 +19,88 @@
         
         }
 
-        h1 {
-        font-size: 32px;
+        
+        main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Lexend', sans-serif;
         text-align: center;
+        }
+
+        h1 {
+        font-size: 28px;
         margin-bottom: 20px;
         }
 
-        h2 {
-            color: #00561D;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         }
+ 
 
         p {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
+        font-size: 16px;
         }
 
-        .menu__icon {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
         }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
 
     </style>
 </head>
@@ -75,16 +131,18 @@
         </nav>
     </header>
     <main>
-        <h1>LA MUSIQUE</h1>
-        <h2>“Welcome to the Eye” - Brian Tyler</h2>
-        <img class="menu__icon" src="/public/img/image 8.png" alt="image 8">
-        <p>“Welcome to the Eye” est une musique composée par Brian Tyler pour le film Insaisissables. Il s’agit du neuvième morceau de la bande originale du film, qui compte 18 titres. La musique accompagne la scène finale du film, où les Quatre Cavaliers se rendent dans un lieu secret appelé “L’Oeil”, qui est le nom d’une société secrète de magiciens.</p>
-        <p>La musique est un mélange de sonorités orchestrales et électroniques, qui créent une ambiance à la fois mystérieuse et épique. La musique joue sur les contrastes entre des passages calmes et des passages plus intenses, qui reflètent les émotions des personnages et les rebondissements de l’intrigue. La musique se termine par une montée en puissance, qui culmine avec un choeur majestueux, qui symbolise la révélation finale du film.</p>
-        <p>La musique “Welcome to the Eye” est un exemple du talent de Brian Tyler, qui est un compositeur renommé dans le domaine du cinéma. Il a notamment signé les musiques de films comme Fast and Furious, Iron Man 3, Avengers : L’Ère d’Ultron, ou encore Rambo : Last Blood.</p>
-
-
-
+        <h1>A propos</h1>
+        <div class="info">
+            <img class="menu__icon" src="/public/img/image 16.png" alt="image 16">
+            <p>CHOULET ADRIEN</p>
+            <p>Etudiant 1ère année MMI Montbéliard</p>
+            <p>0602097500</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>16 rue de la synagogue</p>
+            <p>25200 Montbéliard</p>
+        </div>
     </main>
+    
     <footer>
         <div style="text-align: center; margin-top: 30px;">
             <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">

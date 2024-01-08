@@ -19,34 +19,113 @@
         
         }
 
-        
-        main {
+        /* Style pour le formulaire de contact */
+        .contact {
         max-width: 600px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 40px;
         font-family: 'Lexend', sans-serif;
-        text-align: center;
         }
 
-        h1 {
-        font-size: 28px;
-        margin-bottom: 20px;
+        .form__spacing {
+        margin-bottom: 15px;
         }
 
-        .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .form__label {
+        display: block;
+        font-weight: bold;
         }
- 
 
-        p {
-        margin-bottom: 8px;
+        .bulle {
+        width: 100%;
+        padding: 8px;
         font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
         }
 
+        textarea.bulle {
+        height: 120px;
+        }
+
+        .send__button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        .send__button:hover {
+        background-color: #45a049;
+        }
+
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
+        }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
+
+        
 
     </style>
+
 </head>
 <body>
     <header style="display: flex; justify-content: space-between;">
@@ -74,16 +153,36 @@
             <hr class="menu-site-hr">
         </nav>
     </header>
-    <main>
-        <h1>A propos</h1>
-        <div class="info">
-            <img class="menu__icon" src="/public/img/image 16.png" alt="image 16">
-            <p>CHOULET ADRIEN</p>
-            <p>Etudiant 1ère année MMI Montbéliard</p>
-            <p>0602097500</p>
-            <p>adrien.choulet24@gmail.com</p>
-            <p>16 rue de la synagogue</p>
-            <p>25200 Montbéliard</p>
+    <main class="contact">
+        <div>
+            <form id="contactForm">
+                <div class="form__spacing">
+                    <label class="form__label" for="name">Nom (obligatoire)</label>
+                    <input class="bulle" type="text" id="name" name="name" placeholder="Votre nom">
+                </div>
+    
+                <div class="form__spacing">
+                    <label class="form__label" for="forname">Prénom (obligatoire)</label>
+                    <input class="bulle" type="text" id="forname" name="forname" placeholder="Votre prénom">
+                </div>
+                
+                <div class="form__spacing">
+                    <label class="form__label" for="email">Email (Obligatoire)</label>
+                    <input class="bulle" type="email" id="email" name="email" placeholder="exemple@domaine.com">
+                </div>
+            
+                <div class="form__spacing">
+                    <label class="form__label" for="sujet">Sujet (obligatoire)</label>
+                    <input class="bulle" type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
+                </div>
+                
+                <div class="form__spacing">
+                    <label class="form__label" for="message">Message (obligatoire)</label>
+                    <textarea class="bulle" id="message" name="message" placeholder="Votre message"></textarea>
+                </div>
+                
+                <input class="send__button" type="submit" value="Envoyer">
+            </form>
         </div>
     </main>
     

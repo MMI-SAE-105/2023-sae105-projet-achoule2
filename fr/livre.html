@@ -19,57 +19,91 @@
         
         }
 
-        /* Style pour le formulaire de contact */
-        .contact {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 40px;
-        font-family: 'Lexend', sans-serif;
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
         }
 
-        .form__spacing {
+        h2 {
+            color: #00561D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
         margin-bottom: 15px;
         }
 
-        .form__label {
+        .menu__icon {
         display: block;
-        font-weight: bold;
-        }
-
-        .bulle {
-        width: 100%;
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        }
-
-        textarea.bulle {
-        height: 120px;
-        }
-
-        .send__button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        }
-
-        .send__button:hover {
-        background-color: #45a049;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
         }
 
 
-        
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
+        }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
 
     </style>
-
 </head>
 <body>
     <header style="display: flex; justify-content: space-between;">
@@ -97,39 +131,16 @@
             <hr class="menu-site-hr">
         </nav>
     </header>
-    <main class="contact">
-        <div>
-            <form id="contactForm">
-                <div class="form__spacing">
-                    <label class="form__label" for="name">Nom (obligatoire)</label>
-                    <input class="bulle" type="text" id="name" name="name" placeholder="Votre nom">
-                </div>
-    
-                <div class="form__spacing">
-                    <label class="form__label" for="forname">Prénom (obligatoire)</label>
-                    <input class="bulle" type="text" id="forname" name="forname" placeholder="Votre prénom">
-                </div>
-                
-                <div class="form__spacing">
-                    <label class="form__label" for="email">Email (Obligatoire)</label>
-                    <input class="bulle" type="email" id="email" name="email" placeholder="exemple@domaine.com">
-                </div>
-            
-                <div class="form__spacing">
-                    <label class="form__label" for="sujet">Sujet (obligatoire)</label>
-                    <input class="bulle" type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
-                </div>
-                
-                <div class="form__spacing">
-                    <label class="form__label" for="message">Message (obligatoire)</label>
-                    <textarea class="bulle" id="message" name="message" placeholder="Votre message"></textarea>
-                </div>
-                
-                <input class="send__button" type="submit" value="Envoyer">
-            </form>
-        </div>
+    <main>
+        <h1>LE LIVRE !</h1>
+        <h2>Stefan Alzaris</h2>
+        <p>“Illusionnisme et magie” est un livre écrit par Stefan Alzaris, artiste magicien, et publié en 2001 aux éditions Flammarion. Il s’agit d’un essai qui explore les différentes facettes de la magie de spectacle, en tant qu’art théâtral raffiné, vieux de plusieurs siècles, où se mêlent rêve et illusion.</p>
+        <img class="menu__icon" src="/public/img/image 7.png" alt="image 7">
+        <p>Le livre se compose de huit chapitres, qui abordent chacun un aspect de la magie : l’histoire, la psychologie, la technique, l’esthétique, l’éthique, la pédagogie, la sociologie et la philosophie. L’auteur y expose sa vision personnelle de la magie, fondée sur une approche conceptuelle et créative. Il y dévoile également certains secrets et astuces pour réaliser des tours de magie.</p>
+        <p>Le livre s’adresse à tous les amateurs de magie, qu’ils soient débutants ou confirmés, ainsi qu’à tous ceux qui s’intéressent à cet art fascinant. Il offre une réflexion approfondie sur la nature et le sens de la magie, ainsi qu’une initiation pratique à cet univers merveilleux.</p>
+
+
     </main>
-    
     <footer>
         <div style="text-align: center; margin-top: 30px;">
             <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
