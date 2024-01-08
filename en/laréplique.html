@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        h2 {
+            color: #00561D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
+        }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between;">
+        <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
+            <div class="menu-site">
+                <img src="/public/img/magie 1.png" alt="logo site">
+                <p class="menu-site-p">The elusive film</p>
+            </div>
+            <hr class="menu-site-hr">
+            <ul>
+                <li><a class="menu__link" href="./laréplique.html">La réplique</a></li>
+                <li><a class="menu__link" href="./film.html">films</a></li>
+                <li><a class="menu__link" href="./livre.html">livre</a></li>
+                <li><a class="menu__link" href="./musique.html">musique</a></li>
+                <li><a class="menu__link" href="./réalisateur.html">réalisateur</a></li>
+                <li><a class="menu__link" href="./BAfilm.html">BA/film</a></li>
+                <li><a class="menu__link" href="./contact.html">contact</a></li>
+                <li><a class="menu__link" href="./apropos.html">a propos</a></li>
+                <li><a class="menu__link" href="./autres.html">autres</a></li>
+
+            </ul>
+            <hr class="menu-site-hr">
+        </nav>
+    </header>
+    <main style="text-align: center;">
+        <h1>The must-have line from this film!</h1>
+        <h2>"The more you think you see, the more you'll be fooled! "</h2>
+        <p>The line "Come closer, the more you think you see, the more you'll be fooled! "is a line uttered by the character Daniel Atlas, played by Jesse Eisenberg, in the film Insaisissables.</p>
+        <img class="menu__icon" src="/public/img/image 2.png" alt="image cartes" style="display: block; margin: 0 auto;">
+        <p>This is the catchphrase of the show by Les Quatre Cavaliers, the group of thieving magicians of which he is a member. The phrase expresses the idea that magic is an art of illusion, based on the ability to deceive the spectator's eye and mind. It also suggests that the Four Horsemen are always one step ahead of their pursuers, and that they are masters of their own destiny.</p>
+        <img class="menu__icon" src="/public/img/image 3.png" alt="image cartes" style="display: block; margin: 0 auto;">
+        <p>The line became famous thanks to the film, which was a big hit at the cinema. It has been used in a number of media, including trailers, posters, articles and videos. It has also inspired parodies and humorous diversions. For example, the KEDGE Bordeaux 2022-2023 BDS used the replica to promote its first main teaser. The replica has also become a symbol of the fascination with magic and illusionism, which attracts many spectators around the world.</p>
+    </main>
+    
+    <footer>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>C2 Group</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>This site is a project carried out as part of an educational exercise in the Montbéliard MMI department.</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
+
+    </footer>
+
+</body>
+</html>

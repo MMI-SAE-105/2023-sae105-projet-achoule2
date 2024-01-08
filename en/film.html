@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        p {
+        margin-bottom: 15px;
+        }
+
+        .menu__icon {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
+        }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between;">
+        <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
+            <div class="menu-site">
+                <img src="/public/img/magie 1.png" alt="logo site">
+                <p class="menu-site-p">The elusive film</p>
+            </div>
+            <hr class="menu-site-hr">
+            <ul>
+                <li><a class="menu__link" href="./laréplique.html">La réplique</a></li>
+                <li><a class="menu__link" href="./film.html">films</a></li>
+                <li><a class="menu__link" href="./livre.html">livre</a></li>
+                <li><a class="menu__link" href="./musique.html">musique</a></li>
+                <li><a class="menu__link" href="./réalisateur.html">réalisateur</a></li>
+                <li><a class="menu__link" href="./BAfilm.html">BA/film</a></li>
+                <li><a class="menu__link" href="./contact.html">contact</a></li>
+                <li><a class="menu__link" href="./apropos.html">a propos</a></li>
+                <li><a class="menu__link" href="./autres.html">autres</a></li>
+
+            </ul>
+            <hr class="menu-site-hr">
+        </nav>
+    </header>
+    <main>
+        <h1>THE MOVIE !</h1>
+        <p>Insaisissables is an American-French film directed by Louis Leterrier, released in 2013. It features four prestigious thieving magicians, renowned for handing out money at the end of each of their shows, and the struggle of the police to stop them. The film combines action, humour and mystery, and features some breathtaking magic scenes.</p>
+        <img class="menu__icon" src="/public/img/image 4.png" alt="image 4">
+        <p>The film follows the adventures of the "Four Horsemen", a group of illusionists made up of Daniel Atlas (Jesse Eisenberg), Henley Reeves (Isla Fisher), Jack Wilder (Dave Franco) and Merritt McKinney (Woody Harrelson). Recruited by a mysterious figure, they pull off spectacular heists during their shows, defying the laws of physics and redistributing the wealth to the audience. Their first feat was to steal millions of euros from a bank in Paris, from Las Vegas. Their second feat sees them transfer the fortune of a crooked insurer (Michael Caine) to the public's accounts.</p>
+        <img class="menu__icon" src="/public/img/image 5.png" alt="image 5">
+        <p>Their exploits attract the attention of the FBI, who send agent Dylan Rhodes (Mark Ruffalo) to arrest them. He is assisted by Alma Dray (Mélanie Laurent), an Interpol detective. They also call in Thaddeus Bradley (Morgan Freeman), a former magician who has turned trickster. Together, they will try to unravel the secret of the Four Horsemen, while being constantly outwitted and manipulated by them.</p>
+        <img class="menu__icon" src="/public/img/image 6.png" alt="image 6">
+        <p>Elusive is a film that plays with the codes of the thriller and heist genre, adding a touch of fantasy and entertainment. The film is based on a clever screenplay, with numerous twists and false leads, right up to the final revelation. The film also boasts a prestigious cast of both established and up-and-coming actors. The film was a huge box-office success worldwide, and spawned a sequel, Elusive 2, released in 2016.</p>
+
+    
+    </main>
+    <footer>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>C2 Group</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>This site is a project carried out as part of an educational exercise in the Montbéliard MMI department.</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
+
+    </footer>
+
+</body>
+</html>

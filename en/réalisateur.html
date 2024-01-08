@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Insaisissable</title>
+    <style>
+        body {
+            background-color: #02083A;
+            
+            color: white; 
+        }
+      
+        body {
+        font-family: 'Lexend', sans-serif;
+        
+        }
+
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #00561D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+        margin-bottom: 15px;
+        }
+
+        .menu__icon {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .menu {
+        position: fixed;  
+        top: 0;  
+        right: 0;
+        width: 100%;  
+        height: 100vh;  
+        background: #747171;  
+        z-index: 10;  
+        }
+
+        .header_menuBtn {
+        position: relative;  
+        z-index: 10;  
+        }
+        .noscroll,
+        .noscrollbody {
+        overflow: hidden;
+        }
+
+        .menu-croix {
+        width: 40px;
+        margin: 10px;
+        margin-left: 325px;
+        }
+
+        .menu__link {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+
+        .menu-site {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-bottom: -40px;
+        margin-top: 50px;
+        }
+
+        .menu-site-p {
+        font-size: 20px;
+
+        }
+
+        .menu-site-hr {
+        width: 90%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between;">
+        <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
+            <div class="menu-site">
+                <img src="/public/img/magie 1.png" alt="logo site">
+                <p class="menu-site-p">The elusive film</p>
+            </div>
+            <hr class="menu-site-hr">
+            <ul>
+                <li><a class="menu__link" href="./laréplique.html">La réplique</a></li>
+                <li><a class="menu__link" href="./film.html">films</a></li>
+                <li><a class="menu__link" href="./livre.html">livre</a></li>
+                <li><a class="menu__link" href="./musique.html">musique</a></li>
+                <li><a class="menu__link" href="./réalisateur.html">réalisateur</a></li>
+                <li><a class="menu__link" href="./BAfilm.html">BA/film</a></li>
+                <li><a class="menu__link" href="./contact.html">contact</a></li>
+                <li><a class="menu__link" href="./apropos.html">a propos</a></li>
+                <li><a class="menu__link" href="./autres.html">autres</a></li>
+
+            </ul>
+            <hr class="menu-site-hr">
+        </nav>
+    </header>
+    <main>
+        <h1>THE DIRECTOR</h1>
+        <h2>Louis Leterrier</h2>
+        <img class="menu__icon" src="/public/img/image 9.png" alt="image 9">
+        <p>Louis Leterrier is a French director and producer, born on 17 June 1973 in Paris. He is best known for his French blockbusters (The Transporter, Danny the Dog, The Transporter 2) and American blockbusters (The Incredible Hulk, Clash of the Titans, Elusive, Fast and Furious 10). He is one of the few French directors to have directed productions with budgets in excess of 100 million dollars. He is the only French director to have earned more than $2 billion from his films.</p>
+        <img class="menu__icon" src="/public/img/image 10.png" alt="image 10">
+        <img class="menu__icon" src="/public/img/image 11.png" alt="image 11">
+        <p>Louis Leterrier is the son of director François Leterrier and artistic director Catherine Leterrier. He began his career as an assistant director on films such as Alien: The Resurrection, Joan of Arc and Asterix and Obelix: Mission Cleopatra. He moved into directing in 2002 with The Transporter, an action film co-directed with Corey Yuen and produced by Luc Besson. He then entered the "Besson stable", along with Chris Nahon and Pierre Morel.</p>
+        <img class="menu__icon" src="/public/img/image 12.png" alt="image 12">
+        <p>He came to prominence in 2004 with Danny the Dog, a drama starring Jet Li as a man who is treated like a dog. He then directed The Transporter 2 in 2005, which confirmed its commercial success. In 2008, he moved to Hollywood to direct The Incredible Hulk, starring Edward Norton as the green superhero. This was his first big-budget American film.</p>
+        <img class="menu__icon" src="/public/img/image 13.png" alt="image 13">
+        <p>In 2010, he directed Clash of the Titans, a remake of the 1981 film of the same name, which revisits Greek mythology with Sam Worthington in the role of Perseus. The film was a box-office hit worldwide, despite mixed reviews. In 2013, he returned with Elusive, a heist film mixing magic and illusion, starring Jesse Eisenberg, Mark Ruffalo, Woody Harrelson and Mélanie Laurent. The film was a surprise hit, leading to a sequel in 2016.</p>
+        <img class="menu__icon" src="/public/img/image 14.png" alt="image 14">
+        <p>In 2019, he will direct Dark Crystal: Time of the Resistance, a prequel series to Jim Henson and Frank Oz's cult 1982 film. The series uses animatronic puppets and digital special effects to create a fantasy world populated by strange creatures. The series received rave reviews and won an Emmy Award.</p>
+        <img class="menu__icon" src="/public/img/image 15.png" alt="image 15">
+        <p>In 2021, he directed Lupin, dans l'ombre d'Arsène, a French series broadcast on Netflix, based on the character of Arsène Lupin created by Maurice Leblanc. The series stars Omar Sy as Assane Diop, a gentleman burglar who seeks to avenge his father, who has been unjustly accused of theft. The series was an international success and became the most watched series on Netflix in January 2021.
+        </p>
+
+    
+    
+    </main>
+    <footer>
+        <div style="text-align: center; margin-top: 30px;">
+            <img class="menu__icon" src="/public/img/Line 2.png" alt="Ligne bas footer">
+        </div>
+        <div class="menu-social">
+            <p>Adrien CHOULET</p>
+            <p>C2 Group</p>
+            <p>adrien.choulet24@gmail.com</p>
+            <p>This site is a project carried out as part of an educational exercise in the Montbéliard MMI department.</p> 
+        
+         
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-lecture-de-youtube-100 (1) 1.png" alt="youtube icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/logoinstagram.png" alt="instagram icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/icons8-linkedin-100 1.png" alt="linkedin icon" style="margin-right: 10px;">
+            <img class="menu__icon" src="/public/img/MMI_dut_white_png 1 (1).png" alt="MMI Icon" style="margin-right: 10px;">
+        </div>
+        
+        
+
+    </footer>
+
+</body>
+</html>
