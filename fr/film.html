@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script>
+        function changeLanguage(lang) {
+            // Récupérer le chemin actuel de la page
+            let currentPath = window.location.pathname;
+            
+            // Remplacer /fr/ par /en/ dans le chemin de la page
+            let newPath = currentPath.replace('/fr/', '/en/');
+            
+            // Redirection vers la même page avec le chemin en anglais
+            window.location.href = newPath;
+        }
+    </script>
     <title>Insaisissable</title>
     <style>
         body {

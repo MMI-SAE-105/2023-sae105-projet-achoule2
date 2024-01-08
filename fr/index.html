@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script>
+        function changeLanguage(lang) {
+            // Récupérer le chemin actuel de la page
+            let currentPath = window.location.pathname;
+            
+            // Remplacer /fr/ par /en/ dans le chemin de la page
+            let newPath = currentPath.replace('/fr/', '/en/');
+            
+            // Redirection vers la même page avec le chemin en anglais
+            window.location.href = newPath;
+        }
+    </script>
     <title>Insaisissable</title>
     <style>
         body {
@@ -75,6 +87,8 @@
         margin-top: 50px;
         }
 
+       
+
  
 
     </style>
@@ -85,6 +99,7 @@
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
+            
             <div class="menu-site">
                 <img src="/public/img/magie 1.png" alt="logo site">
                 <p class="menu-site-p">Insaisissable le film</p>
@@ -100,6 +115,7 @@
                 <li><a class="menu__link" href="./contact.html">contact</a></li>
                 <li><a class="menu__link" href="./apropos.html">a propos</a></li>
                 <li><a class="menu__link" href="./autres.html">autres</a></li>
+                <button onclick="changeLanguage('en')">Switch to English</button>
             </ul>
             <hr class="menu-site-hr">
         </nav>
