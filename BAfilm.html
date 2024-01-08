@@ -35,6 +35,7 @@
 
         p {
         margin-bottom: 15px;
+        font-family: 'lexend' sans-serif;
         }
 
         .menu__icon {
@@ -49,75 +50,73 @@
         .centered-link {
         text-align: center;
         }
+        
+        .carrousel {
+        background-color: var(--orange);
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
 
-        .carousel {
-  display: flex;
-  flex-direction: column;
-  width: 958px;
-  height: 380px;
-  align-items: center;
-  gap: 24px;
-  padding: 40px 64px;
-  position: relative;
-}
+        .carrousel img {
+        width: 100%;
+        }
 
-.carousel .slides-box {
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-}
+        .carrousel {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
 
-.carousel .slides-navigation {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
 
-.carousel .click-area {
-  display: inline-flex;
-  align-items: flex-start;
-  padding: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
+        .carrousel_parent-ecrans {
+        width: 100vw;
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        text-align: center;
+        }
 
-.carousel .img {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
+        .carrousel_ecran {
+        scroll-snap-align: start;
+        width: 100%;
+        flex: none;
+        }
 
-.carousel .slide-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
+        .carrousel_picture {
+        position: relative;
+        }
 
-.carousel .dot-indictaor {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-color: #7b61ff;
-  border-radius: 8px;
-}
+        .carrousel_picture img {
+        width: 310px;
+        height: 200px;
+        object-fit: cover;
+        }
 
-.carousel .div {
-  position: relative;
-  width: 12px;
-  height: 12px;
-  background-color: var(--carouselgray);
-  border-radius: 6px;
-  opacity: 0.5;
-}
+  .carrousel_btn {
+    position: absolute;
+    top: 45%;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #5c5353;
+    cursor: pointer;
+    font-size: 36px;
+  }
+
+  .carrousel_btn-avant {
+    left: 0;
+  }
+
+  .carrousel_btn-apres {
+    right: 0;
+  }
+      
 
 
       
@@ -157,7 +156,48 @@
         <div class="centered-link">
             <a href="https://www.youtube.com/watch?v=dXB0PokZ2Y0">Vidéo bande annonce du film Insaisissable</a>
         </div>
-
+        <p>les films</p>
+        <section>
+            <div class="carrousel" x-data="{hrefCourant: 1,}">
+                <div class="carrousel_picture">
+                    <div class="carrousel_button">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"  @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth; hrefCourant = Math.max(1, hrefCourant - 1)">
+                            <
+                        </button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"  @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth; hrefCourant = Math.min(8, hrefCourant + 1)">
+                            >
+                        </button>
+                    </div>
+                    <div class="carrousel_parent-ecrans" x-ref="parent">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            
+                                <img src="/public/img/fastandfurious.png" alt="image ecran 1">
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            
+                                <img src="/public/img/caroussel flm 2.png" alt="image ecran 2">
+                            
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            
+                                <img src="/public/img/caroussel film 3.png" alt="image ecran 3">
+                            
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            
+                                <img src="/public/img/caroussel film 4.png" alt="image ecran 4">
+                            
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            
+                                <img src="/public/img/caroussel film 5.png" alt="image ecran 5">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
   
 
 
