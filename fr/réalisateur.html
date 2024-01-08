@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script>
+        function changeLanguage(lang) {
+           
+            let currentPath = window.location.pathname;
+            
+             
+            let newPath = currentPath.replace('/fr/', '/en/');
+            
+             
+            window.location.href = newPath;
+        }
+    </script>
     <title>Insaisissable</title>
     <style>
         body {
@@ -126,6 +138,7 @@
                 <li><a class="menu__link" href="./contact.html">contact</a></li>
                 <li><a class="menu__link" href="./apropos.html">a propos</a></li>
                 <li><a class="menu__link" href="./autres.html">autres</a></li>
+                <button onclick="changeLanguage('en')">Switch to English</button>
 
             </ul>
             <hr class="menu-site-hr">
