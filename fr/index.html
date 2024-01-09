@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <script>
         function changeLanguage(lang) {
            
@@ -18,12 +19,14 @@
             window.location.href = newPath;
         }
     </script>
+
     <title>Insaisissable</title>
     <style>
         body {
             background-color: #02083A;
             
             color: white; 
+            margin: 10;
         }
       
         body {
@@ -93,15 +96,40 @@
         height: 60px  
         }
 
-       
+        body, p, h1, a, li {
+        font-family: 'Lexend', sans-serif;
+     
+        }
 
- 
+        .custom-heading {
+        color: black;
+        font-size: 23px;
+        margin-top: 20px;
+        align-items: center;
+        }
 
-    </style>
+        body {
+        margin: 0; /* Réinitialise les marges par défaut du corps de la page */
+        }
+
+        header {
+        background-color: #656060;
+        margin: 20; /* Réinitialise les marges par défaut pour le header */
+        padding: 10px 10px; /* Ajoute un padding pour l'espace intérieur du header */
+        width: 100%; /* S'étend sur toute la largeur */
+        }
+
+
+
+
+    
+        </style>
+
 </head>
 <body>
     <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
+        <h1 class="custom-heading">Insaisissable le film</h1>
          
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn menu-hamburger" src="/public/img/open1.png" alt="icone menu">
  
@@ -110,7 +138,7 @@
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             
             <div class="menu-site">
-                <img src="/public/img/magie 1.png" alt="logo site">
+                <img src="/public/img/magie 1.png" alt="logo site"
                 <p class="menu-site-p">Insaisissable le film</p>
             </div>
             <hr class="menu-site-hr">
