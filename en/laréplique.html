@@ -111,11 +111,39 @@
         width: 100%; /* S'étend sur toute la largeur */
         }
 
+        .custom-heading {
+        color: black;
+        font-size: 23px;
+        margin-top: 20px;
+        align-items: center;
+        }
+
+        body {
+        margin: 0; /* Réinitialise les marges par défaut du corps de la page */
+        }
+
+        header {
+        background-color: #656060;
+        margin: 20; /* Réinitialise les marges par défaut pour le header */
+        padding: 10px 10px; /* Ajoute un padding pour l'espace intérieur du header */
+        width: 100%; /* S'étend sur toute la largeur */
+        }
+
+        footer {
+            background-color: #656060;
+            margin: 0; /* Réinitialise les marges par défaut pour le header */
+            padding: 10px 10px;
+            width: 100%;
+            height: 280px
+        }
+
+
     </style>
 </head>
 <body>
     <header style="display: flex; justify-content: space-between;">
         <a href="index.html"><img src="/public/img/magie 1.png" alt="icone retour Accueil"></a>
+        <h1 class="custom-heading">Insaisissable le film</h1>
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn menu-hamburger" src="/public/img/open1.png" alt="icone menu">
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
