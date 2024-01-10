@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
@@ -118,12 +117,12 @@
         }
 
         body {
-        margin: 0; /* Réinitialise les marges par défaut du corps de la page */
+        margin: 0px; /* Réinitialise les marges par défaut du corps de la page */
         }
 
         header {
         background-color: #656060;
-        margin: 20; /* Réinitialise les marges par défaut pour le header */
+        margin: 20px; /* Réinitialise les marges par défaut pour le header */
         padding: 10px 10px; /* Ajoute un padding pour l'espace intérieur du header */
         width: 100%; /* S'étend sur toute la largeur */
         }
@@ -141,7 +140,7 @@
 
         header {
         background-color: #656060;
-        margin: 20; /* Réinitialise les marges par défaut pour le header */
+        margin: 20px; /* Réinitialise les marges par défaut pour le header */
         padding: 10px 10px; /* Ajoute un padding pour l'espace intérieur du header */
         width: 100%; /* S'étend sur toute la largeur */
         }
@@ -167,7 +166,7 @@
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <div class="menu-site">
-                <img src="/public/img/magie 1.png" alt="logo site">
+                <img src="/public/img/magie 1.png" alt="logo site"/>
                 <p class="menu-site-p">Insaisissable le film</p>
             </div>
             <hr class="menu-site-hr">
